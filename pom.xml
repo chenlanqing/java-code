@@ -27,12 +27,18 @@
 
 
     <modules>
+        <module>java-jvm</module>
         <module>java-se</module>
     </modules>
 
 
     <dependencyManagement>
         <dependencies>
+            <dependency>
+                <groupId>com.blue.fish</groupId>
+                <artifactId>java-jvm</artifactId>
+                <version>${project.base.version}</version>
+            </dependency>
             <dependency>
                 <groupId>com.blue.fish</groupId>
                 <artifactId>java-se</artifactId>
