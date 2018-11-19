@@ -27,6 +27,7 @@
 
 
     <modules>
+        <module>java-architecture</module>
         <module>java-design</module>
         <module>java-ee</module>
         <module>java-jvm</module>
@@ -39,6 +40,11 @@
             <dependency>
                 <groupId>com.blue.fish</groupId>
                 <artifactId>java-design</artifactId>
+                <version>${project.base.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>com.blue.fish</groupId>
+                <artifactId>java-architecture</artifactId>
                 <version>${project.base.version}</version>
             </dependency>
             <dependency>
