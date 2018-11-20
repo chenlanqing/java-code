@@ -5,8 +5,6 @@
 
 
 	<artifactId>java-ee</artifactId>
-	<version>0.0.1-SNAPSHOT</version>
-	<packaging>jar</packaging>
 
 	<name>java-ee</name>
 	<description>Demo project for Spring Boot</description>

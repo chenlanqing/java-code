@@ -5,8 +5,6 @@
 
 
 	<artifactId>java-architecture-rpc</artifactId>
-	<version>0.0.1-SNAPSHOT</version>
-	<packaging>jar</packaging>
 
 	<name>java-architecture-rpc</name>
 	<description>Demo project for Spring Boot</description>
