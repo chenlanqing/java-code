@@ -24,6 +24,7 @@
 	</properties>
 
 	<modules>
+		<module>java-architecture-microservice</module>
 		<module>java-architecture-redis</module>
 		<module>java-architecture-rpc</module>
 		<module>java-architecture-zookeeper</module>
@@ -31,6 +32,11 @@
 
 	<dependencyManagement>
         <dependencies>
+			<dependency>
+				<groupId>com.blue.fish</groupId>
+				<artifactId>java-architecture-microservice</artifactId>
+				<version>${project.base.version}</version>
+			</dependency>
             <dependency>
                 <groupId>com.blue.fish</groupId>
                 <artifactId>java-architecture-redis</artifactId>

@@ -4,5 +4,7 @@ package com.blue.fish.design.pattern.creational.simplefactory;
  * @author bluefish 2018/11/19
  * @version 1.0.0
  */
-public class Video {
+public interface Video {
+
+    void produce();
 }
