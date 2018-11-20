@@ -25,7 +25,6 @@
         <java.version>1.8</java.version>
     </properties>
 
-
     <modules>
         <module>java-architecture</module>
         <module>java-common</module>
@@ -34,7 +33,6 @@
         <module>java-jvm</module>
         <module>java-se</module>
     </modules>
-
 
     <dependencyManagement>
         <dependencies>
@@ -160,33 +158,6 @@
             <artifactId>asm</artifactId>
             <version>3.3.1</version>
         </dependency>
-
-        <!-- btrace start：引用的是本地jar包-->
-        <dependency>
-            <groupId>com.sun.btrace</groupId>
-            <artifactId>btrace-agent</artifactId>
-            <version>1.3.11</version>
-            <type>jar</type>
-            <scope>system</scope>
-            <systemPath>${project.basedir}/lib/btrace-agent.jar</systemPath>
-        </dependency>
-        <dependency>
-            <groupId>com.sun.btrace</groupId>
-            <artifactId>btrace-boot</artifactId>
-            <version>1.3.11</version>
-            <type>jar</type>
-            <scope>system</scope>
-            <systemPath>${project.basedir}/lib/btrace-boot.jar</systemPath>
-        </dependency>
-        <dependency>
-            <groupId>com.sun.btrace</groupId>
-            <artifactId>btrace-client</artifactId>
-            <version>1.3.11</version>
-            <type>jar</type>
-            <scope>system</scope>
-            <systemPath>${project.basedir}/lib/btrace-client.jar</systemPath>
-        </dependency>
-        <!-- btrace end -->
 
         <!-- https://mvnrepository.com/artifact/commons-io/commons-io -->
         <dependency>

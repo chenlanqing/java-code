@@ -1,8 +1,8 @@
 package com.blue.fish.jvm.btrace;
 
-import com.learning.example.netty.codec.serialize.UserInfo;
 import com.sun.btrace.BTraceUtils;
 import com.sun.btrace.annotations.*;
+import org.jboss.marshalling.TraceInformation;
 
 import java.lang.reflect.Field;
 
@@ -15,7 +15,7 @@ public class PrintArgComplex {
 	        method="arg2",
 	        location=@Location(Kind.ENTRY)
 	)
-	public static void anyRead(@ProbeClassName String pcn, @ProbeMethodName String pmn, UserInfo user) {
+	public static void anyRead(@ProbeClassName String pcn, @ProbeMethodName String pmn, TraceInformation.UserInfo user) {
 		//print all fields
 		BTraceUtils.printFields(user);
 		//print one field
