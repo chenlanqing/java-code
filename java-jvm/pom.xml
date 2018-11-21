@@ -47,6 +47,11 @@
 			<systemPath>${project.basedir}/lib/btrace-client.jar</systemPath>
 		</dependency>
 		<!-- btrace end -->
+
+        <dependency>
+            <groupId>com.blue.fish</groupId>
+            <artifactId>java-common</artifactId>
+        </dependency>
 	</dependencies>
 
 	<build>
