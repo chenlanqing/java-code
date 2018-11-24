@@ -9,7 +9,7 @@ import java.util.Date;
  */
 public class DateUtil {
 
-    public static final String YYYY_MM_DD_HH_MM_SS = "yyyy_MM_dd HH:mm:ss";
+    public static final String YYYY_MM_DD_HH_MM_SS = "yyyy-MM-dd HH:mm:ss";
 
     /**
      * 将格式化日期转换为Date
