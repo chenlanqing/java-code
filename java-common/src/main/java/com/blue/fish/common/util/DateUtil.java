@@ -1,5 +1,7 @@
 package com.blue.fish.common.util;
 
+import com.blue.fish.common.constant.DateConstant;
+
 import java.text.SimpleDateFormat;
 import java.util.Date;
 
@@ -8,8 +10,6 @@ import java.util.Date;
  * @version 1.0.0
  */
 public class DateUtil {
-
-    public static final String YYYY_MM_DD_HH_MM_SS = "yyyy-MM-dd HH:mm:ss";
 
     /**
      * 将格式化日期转换为Date
@@ -32,7 +32,7 @@ public class DateUtil {
      * @throws Exception
      */
     public static Date parseToDate(String dateStr) throws Exception {
-        SimpleDateFormat sdf = new SimpleDateFormat(YYYY_MM_DD_HH_MM_SS);
+        SimpleDateFormat sdf = new SimpleDateFormat(DateConstant.FORMAT_YYYY_MM_DD_HH_MM_SS);
         return sdf.parse(dateStr);
     }
 
@@ -44,7 +44,7 @@ public class DateUtil {
      * @throws Exception
      */
     public static String formatDate(Date date) throws Exception {
-        SimpleDateFormat sdf = new SimpleDateFormat(YYYY_MM_DD_HH_MM_SS);
+        SimpleDateFormat sdf = new SimpleDateFormat(DateConstant.FORMAT_YYYY_MM_DD_HH_MM_SS);
         return sdf.format(date);
     }
 
