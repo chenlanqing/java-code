@@ -1,4 +1,4 @@
-package com.blue.fish.se.socket;
+package com.blue.fish.se.socket.udp;
 
 /**
  * @author bluefish 2018/11/26
