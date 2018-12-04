@@ -1,4 +1,4 @@
-package com.blue.fish.design.pattern.observer.novel;
+package com.blue.fish.design.pattern.behavioral.observer.novel;
 
 public class Client {
 

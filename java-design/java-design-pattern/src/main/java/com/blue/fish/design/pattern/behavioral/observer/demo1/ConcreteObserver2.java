@@ -1,4 +1,4 @@
-package com.blue.fish.design.pattern.observer.demo1;
+package com.blue.fish.design.pattern.behavioral.observer.demo1;
 
 import lombok.extern.slf4j.Slf4j;
 

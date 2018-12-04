@@ -1,4 +1,4 @@
-package com.blue.fish.design.pattern.observer.demo1;
+package com.blue.fish.design.pattern.behavioral.observer.demo1;
 
 /**
  * 被观察者姓名
