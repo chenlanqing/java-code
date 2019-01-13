@@ -66,6 +66,31 @@
                 <artifactId>java-se</artifactId>
                 <version>${project.base.version}</version>
             </dependency>
+            <dependency>
+                <groupId>com.blue.fish</groupId>
+                <artifactId>java-se-basis</artifactId>
+                <version>${project.base.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>com.blue.fish</groupId>
+                <artifactId>java-se-collection</artifactId>
+                <version>${project.base.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>com.blue.fish</groupId>
+                <artifactId>java-se-io</artifactId>
+                <version>${project.base.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>com.blue.fish</groupId>
+                <artifactId>java-se-socket</artifactId>
+                <version>${project.base.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>com.blue.fish</groupId>
+                <artifactId>java-se-thread</artifactId>
+                <version>${project.base.version}</version>
+            </dependency>
         </dependencies>
     </dependencyManagement>
 
