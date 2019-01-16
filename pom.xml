@@ -43,7 +43,32 @@
             </dependency>
             <dependency>
                 <groupId>com.blue.fish</groupId>
+                <artifactId>java-design-pattern</artifactId>
+                <version>${project.base.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>com.blue.fish</groupId>
                 <artifactId>java-architecture</artifactId>
+                <version>${project.base.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>com.blue.fish</groupId>
+                <artifactId>java-architecture-microservice</artifactId>
+                <version>${project.base.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>com.blue.fish</groupId>
+                <artifactId>java-architecture-redis</artifactId>
+                <version>${project.base.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>com.blue.fish</groupId>
+                <artifactId>java-architecture-rpc</artifactId>
+                <version>${project.base.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>com.blue.fish</groupId>
+                <artifactId>java-architecture-zookeeper</artifactId>
                 <version>${project.base.version}</version>
             </dependency>
             <dependency>
