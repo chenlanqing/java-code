@@ -32,6 +32,7 @@
         <module>java-ee</module>
         <module>java-jvm</module>
         <module>java-se</module>
+        <module>demo</module>
     </modules>
 
     <dependencyManagement>
