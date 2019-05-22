@@ -8,8 +8,8 @@ package com.blue.fish.se.thread.base;
  */
 public class ParentThreadSharedDataWithSon {
     // 使用InheritableThreadLocal来构建ThreadLocal，子线程能看到父线程设置的变量
-//    public static ThreadLocal<String> threadLocal = new InheritableThreadLocal<>();
-    public static ThreadLocal<String> threadLocal = new ThreadLocal<>();
+    public static ThreadLocal<String> threadLocal = new InheritableThreadLocal<>();
+//    public static ThreadLocal<String> threadLocal = new ThreadLocal<>();
 
     public static void main(String[] args) {
         threadLocal.set("Hello 子线程");

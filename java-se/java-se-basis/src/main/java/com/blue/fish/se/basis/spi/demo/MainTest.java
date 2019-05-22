@@ -1,4 +1,4 @@
-package com.blue.fish.se.basis.spi;
+package com.blue.fish.se.basis.spi.demo;
 
 import java.util.ServiceLoader;
 
