@@ -24,6 +24,7 @@
 
     <modules>
         <module>java-design-pattern</module>
+        <module>java-system-design</module>
     </modules>
 
     <dependencyManagement>
