@@ -27,7 +27,8 @@
 		<module>java-architecture-redis</module>
 		<module>java-architecture-rpc</module>
 		<module>java-architecture-zookeeper</module>
-	</modules>
+        <module>java-search</module>
+    </modules>
 
 	<dependencyManagement>
         <dependencies>
