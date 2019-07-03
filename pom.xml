@@ -33,6 +33,7 @@
         <module>java-jvm</module>
         <module>java-se</module>
         <module>demo</module>
+        <module>java-netty</module>
     </modules>
 
     <dependencyManagement>
