@@ -1,4 +1,4 @@
-package com.blue.fish.netty.protocol.websocket;
+package com.blue.fish.netty.protocol.websocket.first;
 
 import io.netty.buffer.ByteBuf;
 import io.netty.buffer.Unpooled;
