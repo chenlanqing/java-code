@@ -9,29 +9,24 @@
 <br>
 <script type="text/javascript">
     var socket;
-    if (!window.WebSocket)
-    {
+    if (!window.WebSocket) {
         window.WebSocket = window.MozWebSocket;
     }
     if (window.WebSocket) {
-        socket = new WebSocket("ws://localhost:8080/websocket");
+        socket = new WebSocket("ws://localhost:8899/ws");
         socket.onmessage = function(event) {
             var ta = document.getElementById('responseText');
-            ta.value="";
-            ta.value = event.data
+            ta.value = ta.value + event.data + "\n";
         };
         socket.onopen = function(event) {
             var ta = document.getElementById('responseText');
-            ta.value = "打开WebSocket服务正常，浏览器支持WebSocket!";
+            ta.value = "打开WebSocket服务正常，浏览器支持WebSocket!\n";
         };
         socket.onclose = function(event) {
             var ta = document.getElementById('responseText');
-            ta.value = "";
-            ta.value = "WebSocket 关闭!";
+            ta.value = ta.value  +"WebSocket 关闭!";
         };
-    }
-    else
-    {
+    } else {
         alert("抱歉，您的浏览器不支持WebSocket协议!");
     }
 
@@ -40,8 +35,7 @@
         if (socket.readyState == WebSocket.OPEN) {
             socket.send(message);
         }
-        else
-        {
+        else {
             alert("WebSocket连接没有建立成功!");
         }
     }
