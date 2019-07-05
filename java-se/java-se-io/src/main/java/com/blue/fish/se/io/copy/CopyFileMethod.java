@@ -1,7 +1,13 @@
 package com.blue.fish.se.io.copy;
 
 import java.io.*;
+import java.nio.ByteBuffer;
+import java.nio.CharBuffer;
+import java.nio.MappedByteBuffer;
 import java.nio.channels.FileChannel;
+import java.nio.charset.Charset;
+import java.nio.charset.CharsetDecoder;
+import java.nio.charset.CharsetEncoder;
 
 /**
  * Java文件拷贝的方式
@@ -15,7 +21,9 @@ public class CopyFileMethod {
         File source = new File("temp/test1.txt");
         File dest = new File("temp/test2.txt");
 //        copyFileByStream(source, dest);
-        copyFileByChannel(source,dest);
+//        copyFileByChannel(source, dest);
+
+        copyFileByMappedByteBuffer("temp/test1.txt","temp/test1_copy.txt");
     }
 
     /**
@@ -53,6 +61,30 @@ public class CopyFileMethod {
                 count -= transferred;
             }
         }
+    }
+
+    public static void copyFileByMappedByteBuffer(String source, String dest) throws Exception {
+        RandomAccessFile input = new RandomAccessFile(source, "r");
+        RandomAccessFile output = new RandomAccessFile(dest, "rw");
+        long length = new File(source).length();
+
+        FileChannel inputChannel = input.getChannel();
+        FileChannel outputChannel = output.getChannel();
+
+        MappedByteBuffer inputData = inputChannel.map(FileChannel.MapMode.READ_ONLY, 0, length);
+
+        Charset charset = Charset.forName("UTF-8");
+        CharsetDecoder decoder = charset.newDecoder();
+        CharsetEncoder encoder = charset.newEncoder();
+
+        CharBuffer charBuffer = decoder.decode(inputData);
+
+        ByteBuffer outputData = encoder.encode(charBuffer);
+
+        outputChannel.write(outputData);
+
+        input.close();
+        output.close();
     }
 }
 
