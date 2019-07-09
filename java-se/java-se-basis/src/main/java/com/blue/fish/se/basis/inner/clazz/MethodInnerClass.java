@@ -1,6 +1,9 @@
 package com.blue.fish.se.basis.inner.clazz;
 
-public class Outer {
+/**
+ * 方法内部类
+ */
+public class MethodInnerClass {
     public void show() {
         int a = 25;
         int b = 13;
@@ -17,7 +20,7 @@ public class Outer {
     }
 
     public static void main(String[] args) {
-        Outer o = new Outer();
+        MethodInnerClass o = new MethodInnerClass();
         o.show();
     }
 }

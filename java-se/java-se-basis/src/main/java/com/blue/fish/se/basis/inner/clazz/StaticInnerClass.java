@@ -4,18 +4,30 @@ import java.util.Calendar;
 import java.util.Date;
 
 /**
- * @author bluefish 2019-01-09
- * @version 1.0.0
+ * 静态内部类
  */
-public class OuterClass {
+public class StaticInnerClass {
 
-    static class InnerClass{
+    private Integer age = 30;
+    private static String name = "sum";
+    private static int one = 10;
+
+    static class InnerClass {
         static int one = 5;
         static final int two = 5;
         static final int three = new Integer(5);
+
+        public void show() {
+            System.out.println(new StaticInnerClass().age);
+            System.out.println(name);
+            System.out.println(StaticInnerClass.one);
+        }
     }
 
     public static void main(String[] args) {
+        InnerClass i = new InnerClass();
+        i.show();
+
         System.out.println(InnerClass.one);
         System.out.println(InnerClass.two);
         System.out.println(InnerClass.three);
@@ -24,4 +36,5 @@ public class OuterClass {
         System.out.println(new Date().getTime());
         System.out.println(Calendar.getInstance().getTime().getTime());
     }
+
 }
