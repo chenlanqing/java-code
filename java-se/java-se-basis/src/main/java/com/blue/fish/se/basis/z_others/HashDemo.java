@@ -1,4 +1,4 @@
-package com.blue.fish.se.basis;
+package com.blue.fish.se.basis.z_others;
 
 
 import org.springframework.util.CollectionUtils;

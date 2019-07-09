@@ -3,10 +3,20 @@ package com.blue.fish.common.util;
 import java.io.*;
 
 /**
+ * 深拷贝
+ *
  * @author bluefish 2019-06-02
  * @version 1.0.0
  */
 public class CloneUtils {
+
+    /**
+     * 深拷贝一个对象
+     *
+     * @param obj 需要拷贝的对象
+     * @param <T> 需要拷贝的对象必须实现Serializable接口，代表其可序列化
+     * @return
+     */
     public static <T extends Serializable> T clone(T obj) {
         T cloneObj = null;
         try {

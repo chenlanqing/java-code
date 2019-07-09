@@ -1,4 +1,4 @@
-package com.blue.fish.se.basis;
+package com.blue.fish.se.basis.z_others;
 
 /**
  * 测试代码执行顺序

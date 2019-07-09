@@ -9,5 +9,7 @@ public class Test {
     public static void main(String[] args) {
         Object i = 1 == 1 ? new Integer(3) : new Float(3);
         System.out.println(i);
+
+        int[] arr = new int[4];
     }
 }

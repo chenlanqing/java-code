@@ -1,4 +1,4 @@
-package com.blue.fish.se.basis;
+package com.blue.fish.se.basis.z_others;
 
 import com.blue.fish.se.basis.common.UserModel;
 

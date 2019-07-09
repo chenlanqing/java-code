@@ -1,4 +1,4 @@
-package com.blue.fish.se.basis;
+package com.blue.fish.se.basis.binary;
 
 /**
  * 二进制数据测试-取模与& 运算
@@ -8,8 +8,6 @@ package com.blue.fish.se.basis;
  */
 public class BinaryExample1 {
     public static void main(String[] args) {
-        System.out.println(1 << 3);
-        System.out.println(10 % (1 << 3));
-        System.out.println(10 & ( (1<< 3) - 1));
+        System.out.println(Integer.toBinaryString(15));
     }
 }

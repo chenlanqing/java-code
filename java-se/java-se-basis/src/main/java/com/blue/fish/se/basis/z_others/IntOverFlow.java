@@ -1,4 +1,4 @@
-package com.blue.fish.se.basis;
+package com.blue.fish.se.basis.z_others;
 
 /**
  * @author bluefish 2018/8/15
