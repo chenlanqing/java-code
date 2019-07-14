@@ -5,10 +5,12 @@ import java.lang.management.ThreadInfo;
 import java.lang.management.ThreadMXBean;
 
 /**
+ * 通过ThreadMXBean发现死锁
+ *
  * @author bluefish 2019-05-23
  * @version 1.0.0
  */
-public class DeadLockTesting {
+public class DeadLockFoundByMXBean {
     public static void main(String[] args) {
         Object obj1 = new Object();
         Object obj2 = new Object();

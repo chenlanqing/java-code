@@ -20,7 +20,7 @@ public class LinkedHashMapSort {
     }
 
     public static void linkedHashMap() {
-        Map hashMap = new LinkedHashMap();
+        LinkedHashMap hashMap = new LinkedHashMap();
         hashMap.put("4", "bbb");
         hashMap.put("3", "ccc");
         hashMap.put("5", "ddd");

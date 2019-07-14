@@ -8,7 +8,7 @@ import java.lang.management.ThreadMXBean;
  * @author bluefish 2018/8/6
  * @version 1.0.0
  */
-public class HelloWorld {
+public class ApplicationThreadCount {
 
     public static void main(String[] args) throws Exception {
         System.out.println("Hello World");

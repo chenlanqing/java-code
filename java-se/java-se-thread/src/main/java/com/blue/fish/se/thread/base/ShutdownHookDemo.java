@@ -14,7 +14,7 @@ import java.util.stream.IntStream;
 public class ShutdownHookDemo {
     public static void main(String[] args) {
         Runtime.getRuntime().addShutdownHook(new Thread(()->{
-            try(FileWriter fw =  new FileWriter("hook.log")) {
+            try(FileWriter fw =  new FileWriter("temp/hook.log")) {
                 fw.write("完成销毁工作，回收内存！" + (new Date()).toString());
                 System.out.println("退出程序...");
             } catch (IOException e) {

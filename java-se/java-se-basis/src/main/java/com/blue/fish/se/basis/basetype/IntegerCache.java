@@ -16,5 +16,7 @@ public class IntegerCache {
         System.out.println(a == b);
 
         System.out.println(c == d);
+
+        System.out.println(Long.parseLong("61c88647"));
     }
 }
