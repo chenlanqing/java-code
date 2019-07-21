@@ -12,11 +12,11 @@ import java.util.concurrent.Executors;
  */
 @Slf4j
 public class CyclicBarrierDemo {
-//    static CyclicBarrier barrier = new CyclicBarrier(5);
+    static CyclicBarrier barrier = new CyclicBarrier(10);
     // 到达屏障后执行某个回调
-    static CyclicBarrier barrier = new CyclicBarrier(5, ()->{
-        log.info("sdasdasdasdasdas");
-    });
+//    static CyclicBarrier barrier = new CyclicBarrier(5, ()->{
+//        log.info("sdasdasdasdasdas");
+//    });
     public static void main(String[] args)throws Exception {
         ExecutorService executorService = Executors.newCachedThreadPool();
 
