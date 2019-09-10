@@ -5,4 +5,6 @@ package com.blue.fish.jvm.jmm;
  * @version 1.0.0
  */
 public class TestJMM {
+
+    private volatile int count = 0;
 }
