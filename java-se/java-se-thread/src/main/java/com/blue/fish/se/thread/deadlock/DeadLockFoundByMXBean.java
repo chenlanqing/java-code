@@ -1,4 +1,4 @@
-package com.blue.fish.se.thread.base;
+package com.blue.fish.se.thread.deadlock;
 
 import java.lang.management.ManagementFactory;
 import java.lang.management.ThreadInfo;

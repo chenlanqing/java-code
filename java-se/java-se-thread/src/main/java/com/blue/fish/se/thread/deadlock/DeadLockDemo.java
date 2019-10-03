@@ -1,4 +1,4 @@
-package com.blue.fish.se.thread.base;
+package com.blue.fish.se.thread.deadlock;
 
 public class DeadLockDemo {
 	public static void main(String[] args) {
