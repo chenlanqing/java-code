@@ -35,11 +35,12 @@ public class AlternatePrintOddEvenNumber {
                         }
                     } else {
                         System.out.println("奇数线程：" + i);
-                        lock.notify();
+                        lock.notifyAll();
                     }
+                    i ++;
 
                 }
-                i ++;
+
             }
         }
     }
@@ -57,11 +58,12 @@ public class AlternatePrintOddEvenNumber {
                         }
                     } else {
                         System.out.println("偶数线程：" + i);
-                        lock.notify();
+                        lock.notifyAll();
                     }
+                    i ++;
 
                 }
-                i ++;
+
             }
         }
     }
