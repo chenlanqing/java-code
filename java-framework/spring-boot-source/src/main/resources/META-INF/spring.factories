@@ -1,1 +1,3 @@
 org.springframework.context.ApplicationContextInitializer=com.blue.fish.source.initializer.FirstInitializer
+
+org.springframework.context.ApplicationListener=com.blue.fish.source.listener.FirstListener,com.blue.fish.source.listener.FourthListener
