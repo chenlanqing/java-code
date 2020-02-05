@@ -14,6 +14,8 @@ public class FutureTest {
 
         cancelTask(future, 2_000); // 在 2 秒之后取消该任务
 
+
+
         try {
             boolean result = future.get();
             System.out.format("%d 是否为素数？ %b\n", num, result);

@@ -1,7 +1,7 @@
-package com.blue.fish.se.collection.base;
+package com.blue.fish.se.collection.set;
 
 import java.util.HashSet;
-import java.util.Set;
+import java.util.Iterator;
 
 /**
  * @author bluefish 2019-06-28
@@ -9,9 +9,11 @@ import java.util.Set;
  */
 public class HashSetDemo {
     public static void main(String[] args) {
-        Set hashSet = new HashSet();
+        HashSet hashSet = new HashSet();
         hashSet.add("1");
         hashSet.add("1");
-        System.out.println(hashSet);
+//        System.out.println(hashSet);
+
+        Iterator iterator = hashSet.iterator();
     }
 }

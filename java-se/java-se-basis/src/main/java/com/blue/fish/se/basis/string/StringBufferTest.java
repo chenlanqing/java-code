@@ -1,13 +1,20 @@
 package com.blue.fish.se.basis.string;
 
-public class StringBufferTest {
-    public void append() {
-        StringBuffer stringBuffer = new StringBuffer();
-        stringBuffer.append("a");
-        stringBuffer.append("b");
-    }
+import org.springframework.util.StopWatch;
 
+public class StringBufferTest {
     public static void main(String[] args) {
-        new StringBufferTest().append();
+        StopWatch watch = new StopWatch();
+        watch.start("string");
+        String str = "a" + "b" + "c";
+        watch.stop();
+
+        watch.start("strignbuffer");
+        StringBuffer sb = new StringBuffer();
+        sb.append("a").append("b").append("c");
+        String str1 = sb.toString();
+        watch.stop();
+
+        System.out.println(watch.prettyPrint());
     }
 }

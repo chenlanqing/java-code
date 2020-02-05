@@ -12,7 +12,7 @@ public class LockConditionDemo {
     private static Condition empty = lock.newCondition();
     private static Condition full = lock.newCondition();
 
-    private static int count = 0;
+    private static volatile int count = 0;
 
     private static final int FULL = 10;
 

@@ -1,4 +1,4 @@
-package com.blue.fish.se.collection.base;
+package com.blue.fish.se.collection.set;
 
 import java.util.SortedSet;
 import java.util.TreeSet;
