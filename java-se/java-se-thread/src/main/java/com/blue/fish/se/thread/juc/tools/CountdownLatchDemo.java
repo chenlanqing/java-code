@@ -12,7 +12,7 @@ import java.util.concurrent.Executors;
  */
 @Slf4j
 public class CountdownLatchDemo {
-    private final static int threadCount = 200;
+    private final static int threadCount = 10;
 
     public static void main(String[] args) throws Exception {
         final CountDownLatch countDownLatch = new CountDownLatch(threadCount);

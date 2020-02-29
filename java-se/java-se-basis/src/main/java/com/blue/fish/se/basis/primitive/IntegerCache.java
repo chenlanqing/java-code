@@ -1,4 +1,4 @@
-package com.blue.fish.se.basis.basetype;
+package com.blue.fish.se.basis.primitive;
 
 /**
  * @author bluefish 2019-05-22

@@ -1,4 +1,4 @@
-package com.blue.fish.se.basis.basetype;
+package com.blue.fish.se.basis.primitive;
 public class StaticTest{
 	public static void main(String[] args){
 		staticFunction();
