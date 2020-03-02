@@ -20,7 +20,7 @@ public class CyclicBarrierDemo {
     public static void main(String[] args)throws Exception {
         ExecutorService executorService = Executors.newCachedThreadPool();
 
-        for (int i = 0; i < 10; i++) {
+        for (int i = 0; i < 100; i++) {
             final int count = i;
             Thread.sleep(1000);
             executorService.execute(() -> {
@@ -36,6 +36,10 @@ public class CyclicBarrierDemo {
     private static void race(int count) throws Exception{
         Thread.sleep(1000);
         log.info("{} is ready", count);
+        // 抛出BrokenBarrierException异常
+        if (count == 8) {
+            barrier.reset();
+        }
         barrier.await();
         log.info("{} continue",count);
     }

@@ -1,8 +1,5 @@
 package com.blue.fish.se.basis.inner.clazz;
 
-import java.util.Calendar;
-import java.util.Date;
-
 /**
  * 静态内部类
  */
@@ -32,9 +29,6 @@ public class StaticInnerClass {
         System.out.println(InnerClass.two);
         System.out.println(InnerClass.three);
 
-        System.out.println(System.currentTimeMillis());
-        System.out.println(new Date().getTime());
-        System.out.println(Calendar.getInstance().getTime().getTime());
     }
 
 }

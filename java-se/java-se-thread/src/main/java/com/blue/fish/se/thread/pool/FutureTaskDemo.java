@@ -9,14 +9,14 @@ public class FutureTaskDemo {
         FutureTaskDemo task = new FutureTaskDemo();
         List<FutureTask<Integer>> taskList = new ArrayList<FutureTask<Integer>>();
         ExecutorService executorService = Executors.newFixedThreadPool(5);
-        for (int i =0;i< 10;i++){
-            FutureTask<Integer> f = new FutureTask<Integer>(task.new ComputeTask(i, "" + i));
+        for (int i = 0; i < 10; i++) {
+            FutureTask<Integer> f = new FutureTask<Integer>(task.new ComputeTask(0, "" + i));
             taskList.add(f);
             executorService.submit(f);
         }
         System.out.println("所有计算任务提交完毕,主线程做其他事情");
         Integer total = 0;
-        for (FutureTask<Integer> t : taskList){
+        for (FutureTask<Integer> t : taskList) {
             try {
                 total = total + t.get();
             } catch (InterruptedException e) {
@@ -29,21 +29,25 @@ public class FutureTaskDemo {
         System.out.println("计算任务执行完毕,执行结果:" + total);
 
     }
+
     private class ComputeTask implements Callable<Integer> {
         private Integer result = 0;
         private String taskName = "";
+
         public ComputeTask(Integer result, String taskName) {
             this.result = result;
             this.taskName = taskName;
         }
+
         public String getTaskName() {
             return taskName;
         }
+
         public Integer call() throws Exception {
-            for (int i = 0; i < 100; i++) {
-                result = +i;
+            for (int i = 0; i <= 100; i++) {
+                result += i;
             }
-            Thread.sleep(5000);
+//            Thread.sleep(5000);
             System.out.println("子线程任务:" + taskName + " 计算完毕");
             return result;
         }

@@ -6,12 +6,7 @@ package com.blue.fish.design.pattern.creational.singleton;
  */
 public class ThreadLocalSingleton {
 
-    private static ThreadLocal<ThreadLocalSingleton> instance = new ThreadLocal(){
-        @Override
-        protected Object initialValue() {
-            return new ThreadLocalSingleton();
-        }
-    };
+    private static ThreadLocal<ThreadLocalSingleton> instance = ThreadLocal.withInitial(ThreadLocalSingleton::new);
 
     private ThreadLocalSingleton(){}
 

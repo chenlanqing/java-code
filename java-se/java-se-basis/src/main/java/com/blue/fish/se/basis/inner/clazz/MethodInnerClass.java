@@ -5,7 +5,7 @@ package com.blue.fish.se.basis.inner.clazz;
  */
 public class MethodInnerClass {
     public void show() {
-        int a = 25;
+        final int a = 25;
         int b = 13;
         class Inner {
             int c = 2;

@@ -17,30 +17,31 @@ public class Test {
         System.out.println("8--" + b.show(c));  //  8--B and B
         System.out.println("9--" + b.show(d));  //  9--A and D
     }
-}
 
-class A {
-    public String show(D obj) {
-        return ("A and D");
+    static class A {
+        public String show(D obj) {
+            return ("A and D");
+        }
+
+        public String show(A obj) {
+            return ("A and A");
+        }
     }
 
-    public String show(A obj) {
-        return ("A and A");
+    static class B extends A {
+        public String show(B obj) {
+            return ("B and B");
+        }
+
+        public String show(A obj) {
+            return ("B and A");
+        }
+    }
+
+    static class C extends B {
+    }
+
+    static class D extends B {
     }
 }
 
-class B extends A {
-    public String show(B obj) {
-        return ("B and B");
-    }
-
-    public String show(A obj) {
-        return ("B and A");
-    }
-}
-
-class C extends B {
-}
-
-class D extends B {
-}

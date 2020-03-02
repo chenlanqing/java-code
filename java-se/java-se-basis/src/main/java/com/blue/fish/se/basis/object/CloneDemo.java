@@ -22,7 +22,7 @@ class Data implements Cloneable {
     int x;
 
     @Override
-    public Object clone() throws CloneNotSupportedException {
-        return super.clone();
+    public Data clone() throws CloneNotSupportedException {
+        return (Data) super.clone();
     }
 }
