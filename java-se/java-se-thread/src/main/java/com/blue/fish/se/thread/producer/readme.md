@@ -9,3 +9,5 @@
 - **信号量（Semaphore）实现**
 
 - **管道流实现（Pipeline）**
+
+- **Exchanger 实现**

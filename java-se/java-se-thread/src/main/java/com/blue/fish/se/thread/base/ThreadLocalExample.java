@@ -1,7 +1,10 @@
 package com.blue.fish.se.thread.base;
 
+import java.text.SimpleDateFormat;
+
 public class ThreadLocalExample {
     private static ThreadLocal<Integer> threadLocal = new ThreadLocal<Integer>();
+    private static ThreadLocal<SimpleDateFormat> threadLocal1 = ThreadLocal.withInitial(() -> new SimpleDateFormat(""));
     public static class MyRunnable implements Runnable {
         @Override
         public void run() {

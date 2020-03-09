@@ -12,7 +12,7 @@ public class HashSetDemo {
         HashSet hashSet = new HashSet();
         hashSet.add("1");
         hashSet.add("1");
-//        System.out.println(hashSet);
+        System.out.println(hashSet);
 
         Iterator iterator = hashSet.iterator();
     }
