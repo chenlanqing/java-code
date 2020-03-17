@@ -15,5 +15,11 @@ public class UnsafeTest {
 //        Class<?> c1 = unsafe.defineAnonymousClass(UnsafeTest.class, buffer, null);
 //        Class<?> c2 = unsafe.defineAnonymousClass(UnsafeTest.class, buffer, null);
 //        System.out.println(c1 == c2);
+
+        System.out.println(System.getProperty("sun.boot.class.path"));
+
+        System.out.println("Main.class.getClassLoader()：" + UnsafeTest.class.getClassLoader());
+        System.out.println(UnsafeTest.class.getClassLoader().getParent());
+        Class.forName("com.blue.fish.jvm.classloader.UnsafeTest", true, UnsafeTest.class.getClassLoader().getParent());//抛出异常
     }
 }
