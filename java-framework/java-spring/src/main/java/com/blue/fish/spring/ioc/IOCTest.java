@@ -1,6 +1,7 @@
 package com.blue.fish.spring.ioc;
 
 import com.blue.fish.spring.entity.Person;
+import com.blue.fish.spring.extension.MySpringUtils;
 import org.springframework.context.support.ClassPathXmlApplicationContext;
 
 /**
@@ -15,5 +16,7 @@ public class IOCTest {
         Person person = context.getBean(Person.class);
 
         System.out.println(person);
+
+        System.out.println(MySpringUtils.getBean("person", Person.class));
     }
 }
