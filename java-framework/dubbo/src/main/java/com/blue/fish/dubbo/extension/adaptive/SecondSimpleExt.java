@@ -1,4 +1,4 @@
-package com.blue.fish.dubbo.adaptive;
+package com.blue.fish.dubbo.extension.adaptive;
 
 import org.apache.dubbo.common.URL;
 import org.apache.dubbo.common.extension.Adaptive;

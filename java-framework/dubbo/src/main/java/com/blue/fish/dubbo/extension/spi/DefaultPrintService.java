@@ -1,4 +1,4 @@
-package com.blue.fish.dubbo.spi;
+package com.blue.fish.dubbo.extension.spi;
 
 /**
  * @author bluefish 2020-03-19

@@ -1,4 +1,4 @@
-package com.blue.fish.dubbo.spi;
+package com.blue.fish.dubbo.extension.spi;
 
 import org.apache.dubbo.common.extension.SPI;
 

@@ -1,2 +1,2 @@
-com.blue.fish.dubbo.spi.DefaultPrintService
-com.blue.fish.dubbo.spi.PrintServiceImpl
+com.blue.fish.dubbo.extension.spi.PrintServiceImpl
+com.blue.fish.dubbo.extension.spi.DefaultPrintService

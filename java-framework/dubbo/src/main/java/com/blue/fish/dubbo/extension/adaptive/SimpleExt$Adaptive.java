@@ -2,7 +2,7 @@
 //
 //import org.apache.dubbo.common.extension.ExtensionLoader;
 //
-//public class SimpleExt$Adaptive implements com.blue.fish.dubbo.adaptive.SimpleExt {
+//public class SimpleExt$Adaptive implements SimpleExt {
 //    public java.lang.String echo(org.apache.dubbo.common.URL arg0, java.lang.String arg1) {
 //        if (arg0 == null) throw new IllegalArgumentException("url == null");
 //        org.apache.dubbo.common.URL url = arg0;
@@ -17,8 +17,8 @@
 //         */
 //        String extName = url.getParameter("second", "simpleImpl");
 //        if (extName == null)
-//            throw new IllegalStateException("Failed to get extension (com.blue.fish.dubbo.adaptive.SimpleExt) name from url (" + url.toString() + ") use keys([second])");
-//        com.blue.fish.dubbo.adaptive.SimpleExt extension = (com.blue.fish.dubbo.adaptive.SimpleExt) ExtensionLoader.getExtensionLoader(com.blue.fish.dubbo.adaptive.SimpleExt.class).getExtension(extName);
+//            throw new IllegalStateException("Failed to get extension (SimpleExt) name from url (" + url.toString() + ") use keys([second])");
+//        SimpleExt extension = (SimpleExt) ExtensionLoader.getExtensionLoader(SimpleExt.class).getExtension(extName);
 //        return extension.echo(arg0, arg1);
 //    }
 //}
