@@ -1,0 +1,2 @@
+second=com.blue.fish.dubbo.adaptive.SecondSimpleExt
+simple.ext=com.blue.fish.dubbo.adaptive.SimpleExtImpl
