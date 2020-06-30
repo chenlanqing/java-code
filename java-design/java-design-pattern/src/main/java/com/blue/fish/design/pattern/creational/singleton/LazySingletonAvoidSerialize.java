@@ -1,6 +1,5 @@
 package com.blue.fish.design.pattern.creational.singleton;
 
-import com.blue.fish.common.annotation.NonThreadSafe;
 
 /**
  * @author bluefish 2018/11/21

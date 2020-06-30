@@ -1,6 +1,7 @@
 package com.blue.fish.dubbo.extension.adaptive;
 
 import org.apache.dubbo.common.URL;
+import org.apache.dubbo.common.extension.Adaptive;
 import org.apache.dubbo.common.extension.SPI;
 
 /**
@@ -10,6 +11,6 @@ import org.apache.dubbo.common.extension.SPI;
 @SPI
 public interface SimpleExt {
 
-//    @Adaptive("second")
+    @Adaptive("second")
     String echo(URL url, String s);
 }

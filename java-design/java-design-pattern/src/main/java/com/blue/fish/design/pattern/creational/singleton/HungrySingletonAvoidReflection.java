@@ -1,6 +1,5 @@
 package com.blue.fish.design.pattern.creational.singleton;
 
-import com.blue.fish.common.annotation.ThreadSafe;
 
 /**
  * 单例模式防止反射
@@ -8,7 +7,6 @@ import com.blue.fish.common.annotation.ThreadSafe;
  * @author bluefish 2018/11/21
  * @version 1.0.0
  */
-@ThreadSafe
 public class HungrySingletonAvoidReflection {
 
     private final static HungrySingletonAvoidReflection HUNGRY_SINGLETON_AVOID_REFLECTION = new HungrySingletonAvoidReflection();

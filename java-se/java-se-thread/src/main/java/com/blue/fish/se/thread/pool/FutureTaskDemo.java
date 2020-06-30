@@ -9,6 +9,8 @@ public class FutureTaskDemo {
         FutureTaskDemo task = new FutureTaskDemo();
         List<FutureTask<Integer>> taskList = new ArrayList<FutureTask<Integer>>();
         ExecutorService executorService = Executors.newFixedThreadPool(5);
+
+
         for (int i = 0; i < 10; i++) {
             FutureTask<Integer> f = new FutureTask<Integer>(task.new ComputeTask(0, "" + i));
             taskList.add(f);

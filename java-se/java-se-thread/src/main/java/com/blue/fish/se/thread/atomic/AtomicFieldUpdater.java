@@ -23,7 +23,7 @@ public class AtomicFieldUpdater implements Runnable {
     }
 
     static class Student {
-        int score;
+        volatile int score;
     }
 
     public static void main(String[] args) throws InterruptedException {

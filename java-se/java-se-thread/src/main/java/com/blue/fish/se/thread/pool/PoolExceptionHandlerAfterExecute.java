@@ -27,7 +27,12 @@ public class PoolExceptionHandlerAfterExecute {
             public Thread newThread(Runnable r) {
                 Thread thread = new Thread(r);
 
-                thread.setUncaughtExceptionHandler(new RewriteUncatchtExceptionHandler());
+                thread.setUncaughtExceptionHandler(new Thread.UncaughtExceptionHandler() {
+                    @Override
+                    public void uncaughtException(Thread t, Throwable e) {
+
+                    }
+                });
 
                 return thread;
             }

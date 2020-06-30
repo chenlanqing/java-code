@@ -1,12 +1,10 @@
 package com.blue.fish.design.pattern.creational.singleton;
 
-import com.blue.fish.common.annotation.NonThreadSafe;
 
 /**
  * @author bluefish 2018/11/21
  * @version 1.0.0
  */
-@NonThreadSafe
 public class LazySingletonAvoidReflection {
 
     private static LazySingletonAvoidReflection lazySingleton;

@@ -1,6 +1,7 @@
 package com.blue.fish.design.pattern.creational.singleton;
 
-import com.blue.fish.common.annotation.ThreadSafe;
+
+import javax.annotation.concurrent.ThreadSafe;
 
 /**
  * @author bluefish 2018/11/21

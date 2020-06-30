@@ -1,7 +1,6 @@
 package com.blue.fish.se.thread.producer.blocking;
 
 import java.util.concurrent.ArrayBlockingQueue;
-import java.util.concurrent.BlockingQueue;
 
 /**
  * @author bluefish 2018/6/30
@@ -9,7 +8,7 @@ import java.util.concurrent.BlockingQueue;
  */
 public class BlockingQueueDemo {
 
-    private static BlockingQueue<Integer> blocking = new ArrayBlockingQueue<>(10);
+    private static ArrayBlockingQueue<Integer> blocking = new ArrayBlockingQueue<>(10);
     private static int count = 0;
 
     public static void main(String[] args) {
