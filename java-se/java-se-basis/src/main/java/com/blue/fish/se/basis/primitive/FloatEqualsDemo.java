@@ -12,5 +12,6 @@ public class FloatEqualsDemo {
 
         System.out.println(f1.floatValue() == f2.floatValue());
         System.out.println(f2.floatValue());
+
     }
 }

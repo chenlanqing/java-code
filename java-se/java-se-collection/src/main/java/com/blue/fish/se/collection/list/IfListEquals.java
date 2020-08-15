@@ -26,5 +26,13 @@ public class IfListEquals {
 
         System.out.println(CollectionUtils.isEqualCollection(list1, list2));
 
+
+        list1.forEach(a -> {
+            if (a.equals("aaaa")) {
+                return;
+            }
+            System.out.println(a);
+        });
+
     }
 }

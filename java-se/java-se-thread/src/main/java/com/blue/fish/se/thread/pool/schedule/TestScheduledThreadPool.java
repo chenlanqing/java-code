@@ -2,6 +2,7 @@ package com.blue.fish.se.thread.pool.schedule;
 
 import java.time.LocalDateTime;
 import java.util.concurrent.Executors;
+import java.util.concurrent.ScheduledExecutorService;
 import java.util.concurrent.ScheduledThreadPoolExecutor;
 import java.util.concurrent.TimeUnit;
 
@@ -12,11 +13,23 @@ import java.util.concurrent.TimeUnit;
 public class TestScheduledThreadPool {
 
     public static void main(String[] args) {
-        ScheduledThreadPoolExecutor pool = new ScheduledThreadPoolExecutor(2, Executors.defaultThreadFactory());
+        ScheduledExecutorService pool = new ScheduledThreadPoolExecutor(2, Executors.defaultThreadFactory());
+        pool.scheduleAtFixedRate(() -> {
+            try {
+                Thread.sleep(6000);
+            } catch (InterruptedException e) {
+                e.printStackTrace();
+            }
+            System.out.println("scheduleAtFixedRate: " + LocalDateTime.now());
+        }, 1, 5000, TimeUnit.MILLISECONDS);
 
-
-        pool.scheduleAtFixedRate(()->{
-            System.out.println(LocalDateTime.now());
-        }, 0, 5000, TimeUnit.MILLISECONDS);
+        pool.scheduleWithFixedDelay(() -> {
+            try {
+                Thread.sleep(5000);
+            } catch (InterruptedException e) {
+                e.printStackTrace();
+            }
+            System.out.println("scheduleWithFixedDelay: " + LocalDateTime.now());
+        }, 1, 5000, TimeUnit.MILLISECONDS);
     }
 }

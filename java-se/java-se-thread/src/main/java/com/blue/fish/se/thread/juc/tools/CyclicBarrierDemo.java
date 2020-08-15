@@ -37,9 +37,9 @@ public class CyclicBarrierDemo {
         Thread.sleep(1000);
         log.info("{} is ready", count);
         // 抛出BrokenBarrierException异常
-//        if (count == 8) {
-//            barrier.reset();
-//        }
+        if (count == 8) {
+            barrier.reset();
+        }
         barrier.await();
         log.info("{} continue",count);
     }

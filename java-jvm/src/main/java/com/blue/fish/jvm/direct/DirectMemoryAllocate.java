@@ -32,5 +32,6 @@ public class DirectMemoryAllocate {
     private static void nioAllocate()throws Exception {
         ByteBuffer bb = ByteBuffer.allocateDirect(1024*1024*512);
 
+        System.gc();
     }
 }

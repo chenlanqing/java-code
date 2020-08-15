@@ -1,6 +1,5 @@
 package com.blue.fish.se.basis.jdbc;
 
-import com.mysql.jdbc.Driver;
 
 import java.sql.Connection;
 import java.sql.DriverManager;
@@ -14,7 +13,7 @@ import java.sql.ResultSet;
 public class JDBCDemo {
 
     public static void main(String[] args) throws Exception {
-        DriverManager.registerDriver(new Driver());
+//        DriverManager.registerDriver(new Driver());
 
         String url = "jdbc:mysql://localhost:3306/test?useUnicode=true&characterEncoding=utf-8&allowMultiQueries=true";
         String userName = "root";
