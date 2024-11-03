@@ -12,8 +12,6 @@
         <module>design-pattern</module>
         <module>concurrent</module>
         <module>io</module>
-        <module>socket</module>
-        <module>file</module>
         <module>common</module>
     </modules>
 
