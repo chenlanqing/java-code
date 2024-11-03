@@ -17,4 +17,29 @@
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
     </properties>
 
+    <dependencies>
+        <!-- btrace start-->
+        <dependency>
+            <groupId>io.btrace</groupId>
+            <artifactId>btrace-agent</artifactId>
+            <version>2.2.5</version>
+        </dependency>
+        <dependency>
+            <groupId>io.btrace</groupId>
+            <artifactId>btrace-boot</artifactId>
+            <version>2.2.5</version>
+        </dependency>
+        <dependency>
+            <groupId>io.btrace</groupId>
+            <artifactId>btrace-client</artifactId>
+            <version>2.2.5</version>
+        </dependency>
+        <!-- btrace end -->
+
+        <dependency>
+            <groupId>com.qing.fan</groupId>
+            <artifactId>common</artifactId>
+        </dependency>
+    </dependencies>
+
 </project>
