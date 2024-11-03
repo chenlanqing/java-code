@@ -13,7 +13,13 @@
     <artifactId>design-pattern</artifactId>
 
     <modules>
-        <module>single</module>
+        <module>singleton</module>
+        <module>factory</module>
+        <module>strategy</module>
+        <module>observer</module>
+        <module>proxy</module>
+        <module>adapter</module>
+        <module>chain-responsibility</module>
     </modules>
 
     <properties>
