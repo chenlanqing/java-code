@@ -14,6 +14,7 @@
 
     <modules>
         <module>base-thread</module>
+        <module>producer-consumer</module>
     </modules>
 
     <properties>
